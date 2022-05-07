@@ -1,6 +1,6 @@
-package pt.ulusofona.com.kotlin.observerobservable.classes
+package pt.ulusofona.cm.kotlin.observerobservable.classes
 
-import pt.ulusofona.com.kotlin.observerobservable.interfaces.OnNoticiaListener
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNoticiaListener
 
 data class CorreioDaLusofona(val maxLeitores: Int, val noticias: List<Noticia>) {
 

@@ -1,9 +1,9 @@
-package pt.ulusofona.com.kotlin.observerobservable.classes
+package pt.ulusofona.cm.kotlin.observerobservable.classes
 
-import pt.ulusofona.com.kotlin.observerobservable.interfaces.OnNoticiaListener
-import pt.ulusofona.com.kotlin.observerobservable.interfaces.OnNumeroListener
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNoticiaListener
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
-class Bufo: Leitor("Bufo"),OnNumeroListener, OnNoticiaListener {
+class Bufo: Leitor("Bufo"), OnNumeroListener, OnNoticiaListener {
     override fun onReceiveNumero(numero: Int) {
         TODO("Not yet implemented")
     }

@@ -1,6 +1,6 @@
-package pt.ulusofona.com.kotlin.observerobservable.classes
+package pt.ulusofona.cm.kotlin.observerobservable.classes
 
-import pt.ulusofona.com.kotlin.observerobservable.interfaces.Registavel
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.Registavel
 
 abstract class Leitor(val nome: String): Registavel {
 

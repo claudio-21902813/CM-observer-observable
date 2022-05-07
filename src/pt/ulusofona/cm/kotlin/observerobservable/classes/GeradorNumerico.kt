@@ -1,6 +1,6 @@
-package pt.ulusofona.com.kotlin.observerobservable.classes
+package pt.ulusofona.cm.kotlin.observerobservable.classes
 
-import pt.ulusofona.com.kotlin.observerobservable.interfaces.OnNumeroListener
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 data class GeradorNumerico(val maxLeitores: Int, val informacoes: List<Int>) {
 

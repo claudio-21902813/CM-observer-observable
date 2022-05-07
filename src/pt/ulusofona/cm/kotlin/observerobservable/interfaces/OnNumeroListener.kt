@@ -1,4 +1,4 @@
-package pt.ulusofona.com.kotlin.observerobservable.interfaces
+package pt.ulusofona.cm.kotlin.observerobservable.interfaces
 
 interface OnNumeroListener: Registavel {
     override fun leitorAdicionadoComSucesso() {

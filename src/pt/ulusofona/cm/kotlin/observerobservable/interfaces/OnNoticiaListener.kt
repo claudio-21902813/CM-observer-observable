@@ -1,6 +1,6 @@
-package pt.ulusofona.com.kotlin.observerobservable.interfaces
+package pt.ulusofona.cm.kotlin.observerobservable.interfaces
 
-import pt.ulusofona.com.kotlin.observerobservable.classes.Noticia
+import pt.ulusofona.cm.kotlin.observerobservable.classes.Noticia
 
 interface OnNoticiaListener: Registavel {
     override fun leitorAdicionadoComSucesso() {

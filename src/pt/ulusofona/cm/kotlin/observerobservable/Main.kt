@@ -1,4 +1,4 @@
-package pt.ulusofona.com.kotlin.observerobservable
+package pt.ulusofona.cm.kotlin.observerobservable
 class Main {
 
     fun main(){
