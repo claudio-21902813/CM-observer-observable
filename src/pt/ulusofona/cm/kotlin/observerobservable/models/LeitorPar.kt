@@ -11,11 +11,11 @@ data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListen
     }
 
     override fun leitorAdicionadoComSucesso() {
-        TODO("Not yet implemented")
+        super.leitorAdicionadoComSucesso()
     }
 
     override fun leitorRemovidoComSucesso() {
-        TODO("Not yet implemented")
+        super.leitorRemovidoComSucesso()
     }
 
     override fun onReceiveNumero(numero: Int) {
@@ -24,8 +24,10 @@ data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListen
 
     fun imprimeNumeros(): String{
         var msg = ""
-        for(numero in numeros) {
-            msg += numero
+        numeros.forEach {
+            if (it % 2 == 0) {
+                msg += it
+            }
         }
         return msg
     }

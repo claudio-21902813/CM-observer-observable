@@ -18,6 +18,7 @@ data class GeradorNumerico(val maxLeitores: Int, val informacoes: List<Int>) {
         if(leitores.size > maxLeitores){
             throw LimiteDeLeitoresAtingidoException("GeradorNumerico atingiu o número máximo de leitores: $maxLeitores")
         }
+        numeroListener.leitorAdicionadoComSucesso()
         leitores.add(numeroListener)
     }
 
@@ -25,6 +26,7 @@ data class GeradorNumerico(val maxLeitores: Int, val informacoes: List<Int>) {
         if (!leitores.contains(numeroListener)) {
             throw LeitorInexistenteException()
         }
+        numeroListener.leitorRemovidoComSucesso()
         leitores.remove(numeroListener)
     }
 

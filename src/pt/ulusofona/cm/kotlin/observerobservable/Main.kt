@@ -1,23 +1,16 @@
 package pt.ulusofona.cm.kotlin.observerobservable
 
-import pt.ulusofona.cm.kotlin.observerobservable.models.Bufo
-import pt.ulusofona.cm.kotlin.observerobservable.models.CorreioDaLusofona
-import pt.ulusofona.cm.kotlin.observerobservable.models.LeitorPar
-import pt.ulusofona.cm.kotlin.observerobservable.models.Noticia
+import pt.ulusofona.cm.kotlin.observerobservable.models.*
 
 
 fun main() {
 
-    val listaNoticias = arrayListOf<Noticia>(
-        Noticia("Noticia 1","algo..."),
-        Noticia("Noticia 2","algo..."),
-        Noticia("Noticia 3","algo...")
-    )
+    val numeros = arrayListOf<Int>(1,2,3,4,5,6)
 
-    val bufo = Bufo("Bufffofo")
-    val correioDaLusofona = CorreioDaLusofona(12, listaNoticias)
-    correioDaLusofona.adicionarLeitor(bufo)
-    correioDaLusofona.iniciar()
+    val geradorNumerico = GeradorNumerico(2,numeros)
+    val leitorPar = LeitorPar("Leitor de Pares")
 
-    println(bufo.noticias)
+    geradorNumerico.iniciar()
+    geradorNumerico.adicionarLeitor(leitorPar)
+    println(leitorPar.estaRegistado())
 }
