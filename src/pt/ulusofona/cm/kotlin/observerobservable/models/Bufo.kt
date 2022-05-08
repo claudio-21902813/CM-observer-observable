@@ -3,7 +3,7 @@ package pt.ulusofona.cm.kotlin.observerobservable.models
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNoticiaListener
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
-class Bufo: Leitor("Bufo"), OnNumeroListener, OnNoticiaListener {
+data class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNoticiaListener {
 
     val numeros: List<Int>
     val noticias: List<Noticia>
