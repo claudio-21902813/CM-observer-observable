@@ -10,17 +10,17 @@ data class CorreioDaLusofona(val maxLeitores: Int, val noticias: List<Noticia>) 
         lista = ArrayList()
     }
 
-    private fun iniciar() = notificarLeitores()
+    fun iniciar() = notificarLeitores()
 
-    private fun adicionarLeitor(noticiaListener: OnNoticiaListener){
+    fun adicionarLeitor(noticiaListener: OnNoticiaListener){
         TODO()
     }
 
-    private fun removerLeitor(noticiaListener: OnNoticiaListener){
+    fun removerLeitor(noticiaListener: OnNoticiaListener){
         TODO()
     }
 
-    private fun notificarLeitores(){
+    fun notificarLeitores(){
         TODO()
     }
 

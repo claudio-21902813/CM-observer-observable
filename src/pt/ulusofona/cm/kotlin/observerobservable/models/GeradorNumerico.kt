@@ -10,17 +10,17 @@ data class GeradorNumerico(val maxLeitores: Int, val informacoes: List<Int>) {
         lista = ArrayList()
     }
 
-    private fun iniciar() = notificarLeitores()
+    fun iniciar() = notificarLeitores()
 
-    private fun adicionarLeitor(noticiaListener: OnNumeroListener){
+    fun adicionarLeitor(noticiaListener: OnNumeroListener){
         TODO()
     }
 
-    private fun removerLeitor(noticiaListener: OnNumeroListener){
+    fun removerLeitor(noticiaListener: OnNumeroListener){
         TODO()
     }
 
-    private fun notificarLeitores(){
+    fun notificarLeitores(){
         TODO()
     }
 
