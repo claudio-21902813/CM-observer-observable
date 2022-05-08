@@ -4,14 +4,14 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.Registavel
 
 abstract class Leitor(val nome: String): Registavel {
 
-    private val registado: Boolean = false
+    private var registado: Boolean = false
 
     override fun leitorAdicionadoComSucesso() {
-        TODO("Not yet implemented")
+        registado = true
     }
 
     override fun leitorRemovidoComSucesso() {
-        TODO("Not yet implemented")
+        registado = false
     }
 
     fun estaRegistado() = registado

@@ -6,11 +6,11 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 data class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNoticiaListener {
 
     val numeros: List<Int>
-    val noticias: List<Noticia>
+    val noticias: ArrayList<Noticia>
 
     init {
         numeros = ArrayList()
-        noticias = ArrayList()
+        noticias = arrayListOf()
     }
 
     override fun onReceiveNumero(numero: Int) {
@@ -18,7 +18,7 @@ data class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNot
     }
 
     override fun onReceiveNoticia(noticia: Noticia) {
-        TODO("Not yet implemented")
+        noticias.add(noticia)
     }
 
     override fun leitorAdicionadoComSucesso() {

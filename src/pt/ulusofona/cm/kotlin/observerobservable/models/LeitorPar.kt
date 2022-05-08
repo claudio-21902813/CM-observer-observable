@@ -4,10 +4,10 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
 
-    val numeros: List<Int>
+    val numeros: ArrayList<Int>
 
     init {
-        numeros = ArrayList()
+        numeros = arrayListOf()
     }
 
     override fun leitorAdicionadoComSucesso() {
@@ -19,12 +19,15 @@ data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListen
     }
 
     override fun onReceiveNumero(numero: Int) {
-        TODO("Not yet implemented")
+        numeros.add(numero)
     }
 
     fun imprimeNumeros(): String{
-
-        return "e"
+        var msg = ""
+        for(numero in numeros) {
+            msg += numero
+        }
+        return msg
     }
 
 }

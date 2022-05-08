@@ -4,24 +4,28 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNoticiaListener
 
 data class CorreioDaLusofona(val maxLeitores: Int, val noticias: List<Noticia>) {
 
-    private val lista: List<OnNoticiaListener>
+    private val leitores: ArrayList<OnNoticiaListener>
 
     init {
-        lista = ArrayList()
+        leitores = ArrayList()
     }
 
     fun iniciar() = notificarLeitores()
 
     fun adicionarLeitor(noticiaListener: OnNoticiaListener){
-        TODO()
+        leitores.add(noticiaListener)
     }
 
     fun removerLeitor(noticiaListener: OnNoticiaListener){
-        TODO()
+        leitores.remove(noticiaListener)
     }
 
     fun notificarLeitores(){
-        TODO()
+        leitores.forEach {
+            for (noticia in noticias) {
+                it.onReceiveNoticia(noticia)
+            }
+        }
     }
 
 }
