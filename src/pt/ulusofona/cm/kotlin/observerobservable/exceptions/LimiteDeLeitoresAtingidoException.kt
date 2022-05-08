@@ -1,4 +1,4 @@
-package pt.ulusofona.cm.kotlin.observerobservable.excecoes
+package pt.ulusofona.cm.kotlin.observerobservable.exceptions
 
 import java.lang.Exception
 
