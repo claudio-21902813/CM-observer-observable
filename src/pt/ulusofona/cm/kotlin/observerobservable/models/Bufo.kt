@@ -22,11 +22,11 @@ data class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNot
     }
 
     override fun leitorAdicionadoComSucesso() {
-        TODO("Not yet implemented")
+        super.leitorAdicionadoComSucesso()
     }
 
     override fun leitorRemovidoComSucesso() {
-        TODO("Not yet implemented")
+        super.leitorRemovidoComSucesso()
     }
 
     fun imprimeNumeros(): String {
