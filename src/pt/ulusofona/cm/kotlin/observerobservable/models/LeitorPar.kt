@@ -2,7 +2,7 @@ package pt.ulusofona.cm.kotlin.observerobservable.models
 
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
-class LeitorPar: Leitor("frfr"), OnNumeroListener {
+data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
 
     val numeros: List<Int>
 
