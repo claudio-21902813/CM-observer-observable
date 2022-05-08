@@ -4,10 +4,10 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 class LeitorPar: Leitor("frfr"), OnNumeroListener {
 
-    private val lista: List<Int>
+    val numeros: List<Int>
 
     init {
-        lista = ArrayList()
+        numeros = ArrayList()
     }
 
     override fun leitorAdicionadoComSucesso() {

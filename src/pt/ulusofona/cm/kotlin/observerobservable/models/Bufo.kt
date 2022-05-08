@@ -4,6 +4,15 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNoticiaListener
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 class Bufo: Leitor("Bufo"), OnNumeroListener, OnNoticiaListener {
+
+    val numeros: List<Int>
+    val noticias: List<Noticia>
+
+    init {
+        numeros = ArrayList()
+        noticias = ArrayList()
+    }
+
     override fun onReceiveNumero(numero: Int) {
         TODO("Not yet implemented")
     }
@@ -20,11 +29,11 @@ class Bufo: Leitor("Bufo"), OnNumeroListener, OnNoticiaListener {
         TODO("Not yet implemented")
     }
 
-    private fun imprimeNumeros(): String {
+    fun imprimeNumeros(): String {
         return "frfrrf"
     }
 
-    private fun imprimeNoticias(): String {
+    fun imprimeNoticias(): String {
         return "frfrrf"
     }
 
