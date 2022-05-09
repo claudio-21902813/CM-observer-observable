@@ -3,9 +3,8 @@ package pt.ulusofona.cm.kotlin.observerobservable.models
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNoticiaListener
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
-data class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNoticiaListener {
+class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNoticiaListener {
 
-    val numeros: ArrayList<Int>
     val noticias: ArrayList<Noticia>
 
     init {
@@ -19,14 +18,6 @@ data class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNot
 
     override fun onReceiveNoticia(noticia: Noticia) {
         noticias.add(noticia)
-    }
-
-    override fun leitorAdicionadoComSucesso() {
-        super.leitorAdicionadoComSucesso()
-    }
-
-    override fun leitorRemovidoComSucesso() {
-        super.leitorRemovidoComSucesso()
     }
 
     fun imprimeNumeros(): String {

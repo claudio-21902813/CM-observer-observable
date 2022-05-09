@@ -33,6 +33,7 @@ data class GeradorNumerico(val maxLeitores: Int, val informacoes: List<Int>) {
     fun notificarLeitores(){
         leitores.forEach {
             for (numero in informacoes) {
+                println("notificar")
                 it.onReceiveNumero(numero)
             }
         }

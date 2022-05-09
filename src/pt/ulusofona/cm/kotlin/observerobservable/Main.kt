@@ -9,8 +9,9 @@ fun main() {
 
     val geradorNumerico = GeradorNumerico(2,numeros)
     val leitorPar = LeitorPar("Leitor de Pares")
+    val leitorBufo = Bufo("Leitor Bufo")
 
+    geradorNumerico.adicionarLeitor(leitorBufo)
     geradorNumerico.iniciar()
-    geradorNumerico.adicionarLeitor(leitorPar)
-    println(leitorPar.estaRegistado())
+    println(leitorBufo.numeros)
 }
