@@ -1,13 +1,15 @@
 package pt.ulusofona.cm.kotlin.observerobservable.models
 
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
-/*
+
 class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
 
     val numeros: MutableList<Int> = mutableListOf()
 
     override fun onReceiveNumero(numero: Int) {
-        numeros.add(numero)
+        if(numero % 2 == 0) {
+            numeros.add(numero)
+        }
     }
 
     fun imprimeNumeros(): String{
@@ -20,4 +22,4 @@ class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
         return msg
     }
 
-}*/
+}

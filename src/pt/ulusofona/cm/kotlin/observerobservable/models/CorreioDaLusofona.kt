@@ -15,7 +15,7 @@ data class CorreioDaLusofona(val maxLeitores: Int, val noticias: List<Noticia>) 
     fun iniciar() = notificarLeitores()
 
     fun adicionarLeitor(noticiaListener: OnNoticiaListener){
-        if(leitores.size > maxLeitores){
+        if(leitores.size > maxLeitores - 1){
             throw LimiteDeLeitoresAtingidoException("CorreioDaLusofona atingiu o número máximo de leitores: $maxLeitores")
         }
         noticiaListener.leitorAdicionadoComSucesso()

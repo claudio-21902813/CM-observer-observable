@@ -17,23 +17,3 @@ abstract class Leitor(val nome: String): Registavel {
 
     fun estaRegistado() = registado
 }
-
-class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
-
-    val numeros: MutableList<Int> = mutableListOf()
-
-    override fun onReceiveNumero(numero: Int) {
-        numeros.add(numero)
-    }
-
-    fun imprimeNumeros(): String{
-        var msg = ""
-        numeros.forEach {
-            if (it % 2 == 0) {
-                msg += it
-            }
-        }
-        return msg
-    }
-
-}
