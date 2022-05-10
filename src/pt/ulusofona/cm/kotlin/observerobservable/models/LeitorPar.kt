@@ -4,11 +4,7 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
 
-    public val numeros : MutableList<Int>
-
-    init {
-        numeros = ArrayList()
-    }
+    val numeros: MutableList<Int> = mutableListOf()
 
     override fun leitorAdicionadoComSucesso() {
         super.leitorAdicionadoComSucesso()
