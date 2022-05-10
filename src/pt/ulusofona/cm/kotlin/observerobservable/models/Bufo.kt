@@ -17,11 +17,11 @@ class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNoticiaL
     }
 
     fun imprimeNumeros(): String {
-        return numeros.toString()
+        return "$nomeBufo escutou os seguintes numeros:$numeros"
     }
 
     fun imprimeNoticias(): String {
-        return noticias.toString()
+        return "$nomeBufo leu as seguintes noticias:$noticias"
     }
 
 }

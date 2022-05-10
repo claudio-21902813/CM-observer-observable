@@ -4,7 +4,7 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
 
-    val numeros: MutableList<Int> = mutableListOf()
+    val numeros = mutableListOf<Int>()
 
     override fun onReceiveNumero(numero: Int) {
         if(numero % 2 == 0) {
@@ -13,13 +13,7 @@ class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
     }
 
     fun imprimeNumeros(): String{
-        var msg = ""
-        numeros.forEach {
-            if (it % 2 == 0) {
-                msg += it
-            }
-        }
-        return msg
+        return "$nomeLeitor leu os seguintes numeros pares:$numeros"
     }
 
 }

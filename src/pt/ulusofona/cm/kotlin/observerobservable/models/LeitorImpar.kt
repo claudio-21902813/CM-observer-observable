@@ -13,13 +13,7 @@ class LeitorImpar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener 
     }
 
     fun imprimeNumeros(): String{
-        var msg = ""
-        numeros.forEach {
-            if (it % 2 == 1) {
-                msg += it
-            }
-        }
-        return msg
+        return "$nomeLeitor leu os seguintes numeros impares:$numeros"
     }
 
 }
