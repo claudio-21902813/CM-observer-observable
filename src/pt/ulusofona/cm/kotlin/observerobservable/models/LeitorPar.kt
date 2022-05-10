@@ -13,7 +13,7 @@ class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
     }
 
     fun imprimeNumeros(): String{
-        return "$nomeLeitor leu os seguintes numeros pares:$numeros"
+        return "$nomeLeitor leu os seguintes numeros pares: $numeros"
     }
 
 }

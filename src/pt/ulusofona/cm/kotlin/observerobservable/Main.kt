@@ -9,16 +9,11 @@ fun main() {
 
     val geradorNumerico = GeradorNumerico(2,numeros)
     val leitorPar = LeitorPar("Leitor de Pares")
-    val leitorPar2 = LeitorPar("Leitor de Pares")
-    val leitorPar3 = LeitorPar("Leitor de Pares")
-
-
-    geradorNumerico.adicionarLeitor(leitorPar)
-    println("tamanho da lista : ${geradorNumerico.leitores.size}")
-    geradorNumerico.adicionarLeitor(leitorPar2)
-    println("tamanho da lista : ${geradorNumerico.leitores.size}")
-    println("tamanho da lista : ${geradorNumerico.leitores.size}")
 
     geradorNumerico.iniciar()
+    geradorNumerico.adicionarLeitor(leitorPar)
+    geradorNumerico.notificarLeitores()
+
+    println(leitorPar.imprimeNumeros())
 
 }
