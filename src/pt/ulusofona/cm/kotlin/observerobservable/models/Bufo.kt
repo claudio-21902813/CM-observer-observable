@@ -5,12 +5,8 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 class Bufo(val nomeBufo: String): Leitor(nomeBufo), OnNumeroListener, OnNoticiaListener {
 
-    val noticias: ArrayList<Noticia>
-
-    init {
-        numeros = arrayListOf()
-        noticias = arrayListOf()
-    }
+    val noticias = mutableListOf<Noticia>()
+    val numeros = mutableListOf<Int>()
 
     override fun onReceiveNumero(numero: Int) {
         numeros.add(numero)

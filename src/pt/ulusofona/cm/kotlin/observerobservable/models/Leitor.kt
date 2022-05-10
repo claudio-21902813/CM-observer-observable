@@ -5,7 +5,6 @@ import pt.ulusofona.cm.kotlin.observerobservable.interfaces.Registavel
 abstract class Leitor(val nome: String): Registavel {
 
     private var registado: Boolean = false
-    var numeros: ArrayList<Int> = arrayListOf()
 
     override fun leitorAdicionadoComSucesso() {
         registado = true
