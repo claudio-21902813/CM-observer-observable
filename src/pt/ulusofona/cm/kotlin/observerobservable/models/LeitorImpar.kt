@@ -6,14 +6,6 @@ class LeitorImpar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener 
 
     val numeros = mutableListOf<Int>()
 
-    override fun leitorAdicionadoComSucesso() {
-        super.leitorAdicionadoComSucesso()
-    }
-
-    override fun leitorRemovidoComSucesso() {
-        super.leitorRemovidoComSucesso()
-    }
-
     override fun onReceiveNumero(numero: Int) {
         numeros.add(numero)
     }

@@ -1,18 +1,10 @@
 package pt.ulusofona.cm.kotlin.observerobservable.models
 
 import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
+/*
+class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
 
-data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListener {
-
-    open val numeros: MutableList<Int> = mutableListOf()
-
-    override fun leitorAdicionadoComSucesso() {
-        super.leitorAdicionadoComSucesso()
-    }
-
-    override fun leitorRemovidoComSucesso() {
-        super.leitorRemovidoComSucesso()
-    }
+    val numeros: MutableList<Int> = mutableListOf()
 
     override fun onReceiveNumero(numero: Int) {
         numeros.add(numero)
@@ -28,4 +20,4 @@ data class LeitorPar(val nomeLeitor: String): Leitor(nomeLeitor), OnNumeroListen
         return msg
     }
 
-}
+}*/
